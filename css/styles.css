@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #fefbf6;
+    color: #98999c;
+}
+
+.form {
+    width: 90%;
+    max-width: 47.75rem;
+    margin-left: 5%;
+    padding: 2rem;
+}
+
+.heading {
+    margin: 10px 0px 20px 40px;
+}
+
+.form__title {
+    margin: 0;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 16px;
+}
+
+input, select{
+    width: 200px;
+}
+
+.hr {
+    border: 1px solid #98999c;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form__label {
+    justify-self: end;
+}
+
+.input--no-background {
+    background: none;
+    background-color: #fff;
+}

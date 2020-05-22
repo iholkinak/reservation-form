@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta charset="utf-8">
+  <title>Reservation form</title>
+
+  <!-- STYLE SHEETS -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <body class="body">
+    <form class="ui-widget form">
+      <div class="heading">
+        <h2 class="form__title">
+          One-Way Airlines: Let's make reservation
+        </h2>
+        <hr class="hr">
+      </div>
+
+      <div class="grid">
+        <label class="form__label" for="datepicker">Pick a departure date</label>
+        <input id="datepicker" type="text" class="ui-corner-all ui-widget ui-button input--no-background">
+        <label class="form__label" for="tags">Find an airport</label>
+        <input id="tags" type="text" class="ui-corner-all ui-widget ui-button input--no-background">
+        <label class="form__label" for="options">Meal Options</label>
+        <select id="options" type="text" class="">
+          <option value="No meal">No meal</option>
+          <option value="Vegetarian meal">Vegetarian meal</option>
+          <option value="Standard meal">Standard meal</option>
+        </select>
+        <label class="form__label" for="radio">Number of bags to check</label>
+        <fieldset class="">
+          <div id="radio">
+            <input type="radio" id="1">
+            <label for="1">1</label>
+            <input type="radio" id="2" checked="checked">
+            <label for="2">2</label>
+            <input type="radio" id="3">
+            <label for="3">3</label>
+          </div>
+        </fieldset>
+        <label class="form__label" for="radio">Type of seat you'd like</label>
+        <fieldset class="">
+          <div id="ckeckboxes">
+            <input type="checkbox" id="aisle">
+            <label for="aisle">Aisle</label>
+            <input type="checkbox" id="window" checked="checked">
+            <label for="window">Window</label>
+            <input type="checkbox" id="exit-row">
+            <label for="exit-row">Exit Row</label>
+            <input type="checkbox" id="any-seat">
+            <label for="any-seat">Any Seat</label>
+          </div>
+        </fieldset>
+        <label for=""></label>
+        <button class="button ui-button ui-widget ui-corner-all">Continiu reservation process <span class="ui-icon ui-icon-circle-arrow-e"></span></button>
+      </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="form.js"></script>
+  </body>
+
+</html>
